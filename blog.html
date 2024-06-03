@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <script src="https://kit.fontawesome.com/5e18d3bea9.js" crossorigin="anonymous"></script>
+</head>
+
+<body
+style="background-color: rgb(243, 243, 243);"
+>
+
+    <nav style="background-color: rgb(218, 218, 218); height: 60px; width: 100%;">
+        <div style="display: flex; align-items: center; height: 100%; margin-left: 30px; margin-right: 30px;">
+            <ul style="display: flex; list-style-type: none; gap: 44px; align-items: center;">
+                <li>
+                    <img style="height: 50px;" src="./assets/image/dumbways.png" alt="Logo Dumbways">
+                </li>
+                <li class="nav-link">
+                    <a href="index.html"> Home </a>
+                </li>
+                <li class="nav-link">
+                    <a href="blog.html">My Project</a>
+                </li>
+            </ul>
+            <div style="display: flex; width: 100%; justify-content: end;">
+            <a href="contact.html" class="btn-contact"> Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="inputblog(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div>
+                        <label for="title">Project Name</label>
+                        <input type="text" id="projectname">
+                    </div>
+                    <div class="content-date">
+                        <div class="start-date">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="startdate">
+                        </div>
+                
+                        <div class="end-date">
+                        <label for="start-date">End Date</label>
+                        <input type="date" id="enddate">
+                        </div>
+                    </div>
+                    <div>  
+                        <label for="content">Description</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                    <div class="form-container">
+                        <label for="nodejs">Technologies</label>
+                        <div style="display: flex; gap: 15px; margin: 10px;">
+                            <div class="checkbox">
+                                <div class="minicheckbox">
+                                    <input type="checkbox" id="nodejs" value="true">
+                                    <label for="nodejs"> Node Js</label>
+                                </div>
+                                <div class="minicheckbox">
+                                    <input type="checkbox" id="reactjs" value="true">
+                                    <label for="reactjs">React Js</label>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <div class="minicheckbox">
+                                    <input type="checkbox" id="nextjs" value="true">
+                                    <label for="nextjs">Next Js</label>
+                                </div>
+                                <div class="minicheckbox" value="true">
+                                    <input type="checkbox" id="typescript">
+                                    <label for="typescript">TypeScript</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="image">Upload Image</label>
+                        <input type="file" id="uploadimage">
+                    </div>
+                    <div class="button-input">
+                        <button>submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="line">
+        <div id="content" class="blog-list">
+
+        </div>
+    </div>
+
+    <script src="assets/js/blog.js"></script>
+
+</body>
+
+</html>
