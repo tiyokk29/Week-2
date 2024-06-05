@@ -1,0 +1,42 @@
+.container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.label-contact{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.input-contact{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(180, 187, 187);
+    border-color: black;
+    margin-bottom: 10px;
+    height: 40px;
+
+}
+
+.submit-contact{
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+textarea.input-contact{
+    resize: none;
+    height: 100px;
+}
